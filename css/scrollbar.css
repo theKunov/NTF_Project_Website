@@ -1,0 +1,24 @@
+::-webkit-scrollbar-track{
+	background-color: #6371a9;
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: rgb(218, 133, 5);	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}

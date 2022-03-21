@@ -1,0 +1,56 @@
+@font-face { font-family: Hobo; src: url('../HoboStd.otf'); }
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: radial-gradient(#aebefe, #6371a9);
+    --accent-color: #48250a;
+    --text-color: white;
+    --transition-delay: 1s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Hobo;    
+    font-size: 18px;
+    line-height: 1.5;
+    transition: var(--transition-delay);
+
+    background-image: url(../images/background/tree2k.png), url(../images/background/clouds2k.png), var(--background-color);
+    background-size: 30vw, contain, contain;
+    background-position: left top 40vh, top, center;
+    background-repeat: no-repeat, no-repeat;
+}
+
+main {
+    background-image: url(../images/background//bg-neck.png), url(../images/background/ground2k.png);
+    height: 100%;
+    background-position: right, bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+h1, #mission {
+    color: var(--accent-color);
+}
+
+.window, .btn {
+    background-color: var(--accent-color);
+    border-radius: 4em;
+    color: var(--text-color);
+    transition: var(--transition-delay);
+}
+
+a, .window p {
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+

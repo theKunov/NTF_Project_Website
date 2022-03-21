@@ -1,0 +1,50 @@
+.dark {
+    --accent-color: #ededed;
+    --background-color: radial-gradient(#1E1733, #110c1f);
+    --text-color: #221409;
+}
+
+#checkbox {
+    opacity: 0;
+}
+
+.fa-sun {
+    color: rgb(255, 196, 0);
+}
+
+.fa-moon {
+    color: rgb(68, 68, 68);
+}
+
+.theme-toggle {
+    width: 50px;
+    height: 22px;
+    /* -webkit-appearance: none; */
+    background: white;
+    outline: none;
+    border-radius: 10px;
+    transition: var(--transition-delay);
+    padding: .2em;
+}
+
+#checkbox:checked + .theme-toggle .toggle-button{
+    transform: translateX(26.5px);
+    transition: var(--transition-delay);
+
+}
+#checkbox:not(:checked) + .theme-toggle .toggle-button{
+    transition: var(--transition-delay);
+}
+#checkbox:checked ::-webkit-scrollbar-track
+{
+	background-color: #1E1733;
+}
+
+.toggle-button {
+    position: absolute;
+    background-color: #6371a9;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 21.5px;
+}

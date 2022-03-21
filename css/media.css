@@ -1,0 +1,27 @@
+@media only screen and (max-width: 600px) {
+    main {
+        background-image: url(../images/background//bg-neck.png), url(../images/background/ground1080p.png);
+        height: 100%;
+        background-position: bottom, bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #mission {
+        color: rgb(255, 255, 255)
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .window{
+        min-width: 300px;
+        width: 20%; 
+        padding: 2em;
+    }
+}
+@media only screen and (min-width: 3200px) {
+    body {
+        background-size: 20vw, contain, contain;
+        background-position: left top 20vh, top, center;
+    }
+}
+

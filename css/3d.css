@@ -1,0 +1,33 @@
+.planet button{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.planet  button[slot="hotspot-3"]{
+  --min-hotspot-opacity: 0;
+  background-color: white;
+}
+
+.planet button[slot="hotspot-foot"]:not([data-visible]) {
+  background-color: transparent;
+  border: 3px solid blue;
+}
+
+.HotspotAnnotation{
+  background-color: white;
+  position: absolute;
+  transform: translate(10px, 10px);
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  padding: 10px;
+}
+/* This keeps child nodes hidden while the element loads */
+:not(:defined) > * {
+  display: none;
+}
